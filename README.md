@@ -16,7 +16,7 @@ The application allows registration of vehicles, clients, rents and payments, qu
 
 ## Images
 ### Menu, client registration and search screens
-![ ](/imgs/menu.jpg) ![ ](/imgs/cadastro_ex.png) ![ ](/imgs/search.png)
+![ ](/imgs/menu.png) ![ ](/imgs/cadastro_ex.png) ![ ](/imgs/search.png)
 
 ### Report - Vehicle by Client
 
