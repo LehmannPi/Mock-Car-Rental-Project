@@ -1,0 +1,153 @@
+object FormPBusca: TFormPBusca
+  Left = 380
+  Height = 372
+  Top = 250
+  Width = 590
+  Caption = 'Busca Pagamentos'
+  ClientHeight = 372
+  ClientWidth = 590
+  object Opcoes: TGroupBox
+    Left = 0
+    Height = 192
+    Top = 0
+    Width = 590
+    Align = alTop
+    Caption = 'Opções'
+    ClientHeight = 172
+    ClientWidth = 586
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 32
+      Height = 15
+      Top = 8
+      Width = 75
+      Caption = 'ID Pagamento'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 32
+      Height = 15
+      Top = 40
+      Width = 67
+      Caption = 'Nome Client'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 32
+      Height = 15
+      Top = 72
+      Width = 79
+      Caption = 'Valor (Mínimo)'
+      ParentColor = False
+    end
+    object EditIDP: TEdit
+      Left = 120
+      Height = 23
+      Top = 0
+      Width = 80
+      NumbersOnly = True
+      TabOrder = 0
+    end
+    object EditNome: TEdit
+      Left = 120
+      Height = 23
+      Top = 32
+      Width = 264
+      TabOrder = 1
+    end
+    object EditV: TEdit
+      Left = 120
+      Height = 23
+      Top = 64
+      Width = 80
+      NumbersOnly = True
+      TabOrder = 2
+    end
+    object Label4: TLabel
+      Left = 232
+      Height = 15
+      Top = 8
+      Width = 55
+      Caption = 'ID Aluguel'
+      ParentColor = False
+    end
+    object EditIDA: TEdit
+      Left = 304
+      Height = 23
+      Top = 0
+      Width = 80
+      NumbersOnly = True
+      TabOrder = 3
+    end
+    object BitBtnFechar: TBitBtn
+      Left = 120
+      Height = 26
+      Top = 128
+      Width = 81
+      Caption = '&Sair'
+      Kind = bkClose
+      ModalResult = 11
+      TabOrder = 4
+    end
+    object BitBtnBuscar: TBitBtn
+      Left = 208
+      Height = 26
+      Top = 128
+      Width = 81
+      AutoSize = True
+      Caption = '&Buscar'
+      Kind = bkHelp
+      OnClick = BitBtnBuscarClick
+      TabOrder = 5
+    end
+    object Label5: TLabel
+      Left = 32
+      Height = 15
+      Top = 104
+      Width = 76
+      Caption = 'Data (Mínima)'
+      ParentColor = False
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 301
+      Height = 23
+      Top = 96
+      Width = 83
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 6
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 44181
+      Time = 0.707106863424997
+      UseDefaultSeparators = True
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object CheckBoxD: TCheckBox
+      Left = 120
+      Height = 19
+      Top = 100
+      Width = 125
+      Caption = '(Incluir na consulta)'
+      TabOrder = 7
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 180
+    Top = 192
+    Width = 590
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = DataModule1.SourcePag
+    TabOrder = 1
+  end
+end

@@ -1,0 +1,170 @@
+object FormV: TFormV
+  Left = 379
+  Height = 275
+  Top = 250
+  Width = 473
+  Caption = 'Cadastro de Veículos'
+  ClientHeight = 275
+  ClientWidth = 473
+  object DBEditMat: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 48
+    Width = 80
+    DataField = 'id_veiculo'
+    DataSource = DataModule1.SourceV
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object DBEditN: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 80
+    Width = 224
+    DataField = 'den_veiculo'
+    DataSource = DataModule1.SourceV
+    CharCase = ecNormal
+    MaxLength = 40
+    TabOrder = 1
+  end
+  object DBEditMed: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 176
+    Width = 80
+    DataField = 'preco'
+    DataSource = DataModule1.SourceV
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 250
+    Width = 473
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 473
+    DataSource = DataModule1.SourceV
+    Options = []
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 64
+    Height = 15
+    Top = 56
+    Width = 11
+    Caption = 'ID'
+    FocusControl = DBEditMat
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 15
+    Top = 88
+    Width = 51
+    Caption = 'Descrição'
+    FocusControl = DBEditN
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 15
+    Top = 120
+    Width = 22
+    Caption = 'Ano'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 15
+    Top = 152
+    Width = 33
+    Caption = 'Marca'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 64
+    Height = 15
+    Top = 184
+    Width = 30
+    Caption = 'Preço'
+    FocusControl = DBEditMed
+    ParentColor = False
+  end
+  object DBEditMed1: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 208
+    Width = 80
+    DataField = 'cor'
+    DataSource = DataModule1.SourceV
+    CharCase = ecNormal
+    MaxLength = 10
+    TabOrder = 4
+  end
+  object Label6: TLabel
+    Left = 64
+    Height = 15
+    Top = 216
+    Width = 19
+    Caption = 'Cor'
+    FocusControl = DBEditMed1
+    ParentColor = False
+  end
+  object DBEditMed2: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 144
+    Width = 80
+    DataField = 'marca'
+    DataSource = DataModule1.SourceV
+    CharCase = ecNormal
+    MaxLength = 30
+    TabOrder = 5
+  end
+  object DBEditMed3: TDBEdit
+    Left = 184
+    Height = 23
+    Top = 112
+    Width = 80
+    DataField = 'ano'
+    DataSource = DataModule1.SourceV
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object BitBtnFechar: TBitBtn
+    Left = 16
+    Height = 26
+    Top = 8
+    Width = 81
+    Caption = '&Sair'
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 7
+  end
+  object BitBtnBuscar: TBitBtn
+    Left = 104
+    Height = 26
+    Top = 8
+    Width = 81
+    AutoSize = True
+    Caption = '&Buscar'
+    Kind = bkHelp
+    OnClick = BitBtnBuscarClick
+    TabOrder = 8
+  end
+end

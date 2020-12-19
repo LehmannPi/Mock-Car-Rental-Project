@@ -1,0 +1,128 @@
+object FormCli: TFormCli
+  Left = 379
+  Height = 212
+  Top = 250
+  Width = 427
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 212
+  ClientWidth = 427
+  object DBEditMat: TDBEdit
+    Left = 131
+    Height = 23
+    Top = 48
+    Width = 80
+    DataField = 'id_cliente'
+    DataSource = DataModule1.SourceCli
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object DBEditN: TDBEdit
+    Left = 131
+    Height = 23
+    Top = 80
+    Width = 224
+    DataField = 'endereco'
+    DataSource = DataModule1.SourceCli
+    CharCase = ecNormal
+    MaxLength = 100
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 64
+    Height = 15
+    Top = 56
+    Width = 11
+    Caption = 'ID'
+    FocusControl = DBEditMat
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 15
+    Top = 88
+    Width = 49
+    Caption = 'Endereço'
+    FocusControl = DBEditN
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 15
+    Top = 120
+    Width = 43
+    Caption = 'Contato'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 15
+    Top = 152
+    Width = 33
+    Caption = 'Nome'
+    ParentColor = False
+  end
+  object DBEditMed2: TDBEdit
+    Left = 131
+    Height = 23
+    Top = 144
+    Width = 113
+    DataField = 'nome_cliente'
+    DataSource = DataModule1.SourceCli
+    CharCase = ecNormal
+    MaxLength = 50
+    TabOrder = 2
+  end
+  object DBEditMed3: TDBEdit
+    Left = 131
+    Height = 23
+    Top = 112
+    Width = 80
+    DataField = 'contato'
+    DataSource = DataModule1.SourceCli
+    CharCase = ecNormal
+    MaxLength = 11
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 187
+    Width = 427
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 427
+    DataSource = DataModule1.SourceCli
+    Options = []
+    TabOrder = 4
+  end
+  object BitBtnFechar: TBitBtn
+    Left = 16
+    Height = 26
+    Top = 8
+    Width = 81
+    Caption = '&Sair'
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 5
+  end
+  object BitBtnBuscar: TBitBtn
+    Left = 104
+    Height = 26
+    Top = 8
+    Width = 81
+    AutoSize = True
+    Caption = '&Buscar'
+    Kind = bkHelp
+    OnClick = BitBtnBuscarClick
+    TabOrder = 6
+  end
+end

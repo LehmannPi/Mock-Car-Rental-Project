@@ -1,0 +1,58 @@
+object FormRelatorios: TFormRelatorios
+  Left = 380
+  Height = 236
+  Top = 250
+  Width = 320
+  Caption = 'Emissão de Relatórios'
+  ClientHeight = 236
+  ClientWidth = 320
+  Position = poDesktopCenter
+  object Button1: TButton
+    Left = 10
+    Height = 64
+    Top = 10
+    Width = 300
+    Align = alTop
+    BorderSpacing.Around = 10
+    Caption = 'Listagem de Clientes'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 64
+    Top = 84
+    Width = 300
+    Align = alTop
+    BorderSpacing.Around = 10
+    Caption = 'Veículos por Clientes'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Button3: TButton
+    Left = 10
+    Height = 64
+    Top = 158
+    Width = 300
+    Align = alTop
+    BorderSpacing.Around = 10
+    Caption = 'Pagamentos por Clientes'
+    OnClick = Button3Click
+    TabOrder = 2
+  end
+  object ReportPrincipal: TfrReport
+    Dataset = ReportDB
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Left = 44
+    Top = 68
+  end
+  object ReportDB: TfrDBDataSet
+    DataSet = DataModule1.ZReadOnlyQueryConsulta
+    DataSource = DataModule1.SourceConsulta
+    Left = 232
+    Top = 68
+  end
+end

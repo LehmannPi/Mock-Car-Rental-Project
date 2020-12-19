@@ -1,0 +1,28 @@
+object DataConexao: TDataConexao
+  OldCreateOrder = False
+  Height = 153
+  HorizontalOffset = 380
+  VerticalOffset = 250
+  Width = 158
+  object ZConnectionP: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    ClientCodepage = 'Databases'
+    Catalog = 'PostgreSQL 12'
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=GET_ACP'
+      'codepage=Databases'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 5432
+    Database = 'postgres'
+    User = 'postgres'
+    Password = 'admin'
+    Protocol = 'postgresql'
+    LibraryLocation = 'C:\Program Files\PostgreSQL\12\bin\libpq.dll'
+    Left = 64
+    Top = 56
+  end
+end

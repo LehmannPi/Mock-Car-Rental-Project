@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="loc_auto.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="74"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="fprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPrincipal"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="49"/>
+        <CursorPos X="3" Y="59"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="dprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="14"/>
+        <CursorPos X="77" Y="8"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="fveiculos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormV"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="32"/>
+        <CursorPos X="25" Y="49"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="fclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCli"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="16"/>
+        <CursorPos X="25" Y="45"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="falugueis.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAl"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="27"/>
+        <CursorPos X="25" Y="49"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="fpag.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPag"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="31"/>
+        <CursorPos X="25" Y="47"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="dconexao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataConexao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="10"/>
+        <CursorPos X="10" Y="3"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="fbuscav.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormVBusca"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="39"/>
+        <CursorPos X="41" Y="52"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="fbuscacli.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCBusca"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="42"/>
+        <CursorPos X="41" Y="52"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="fbusal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormABusca"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="57"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="fbuscap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPBusca"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="69"/>
+        <CursorPos X="40" Y="82"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="frelatorios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRelatorios"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="27" Y="64"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="fconsultas.pas"/>
+        <ComponentName Value="FormConsultas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="7"/>
+        <UsageCount Value="52"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\dbc\ZDbcSqLiteUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="232"/>
+        <CursorPos Y="241"/>
+        <UsageCount Value="7"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\component\ZAbstractRODataset.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2528"/>
+        <CursorPos Y="2537"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\trabalho_locadora\dprincipal.pas"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\fconsultas.pas"/>
+        <ComponentName Value="FormConsultas"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\..\AppData\Local\lazarus\onlinepackagemanager\packages\zeosdbo\src\dbc\ZDbcPostgreSqlUtils.pas"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="689"/>
+        <CursorPos Y="699"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_class.pas"/>
+        <UnitName Value="LR_Class"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11820"/>
+        <CursorPos Y="11830"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="26" Column="3" TopLine="17"/>
+      </Position1>
+      <Position2>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="25" Column="3" TopLine="17"/>
+      </Position2>
+      <Position3>
+        <Filename Value="fpag.pas"/>
+        <Caret Line="15" Column="67" TopLine="7"/>
+      </Position3>
+      <Position4>
+        <Filename Value="fpag.pas"/>
+        <Caret Line="17" Column="68" TopLine="7"/>
+      </Position4>
+      <Position5>
+        <Filename Value="fbuscap.pas"/>
+      </Position5>
+      <Position6>
+        <Filename Value="fbuscap.pas"/>
+      </Position6>
+      <Position7>
+        <Filename Value="dprincipal.pas"/>
+        <Caret Line="9" Column="10" TopLine="7"/>
+      </Position7>
+      <Position8>
+        <Filename Value="fbuscap.pas"/>
+        <Caret Line="69" Column="31" TopLine="51"/>
+      </Position8>
+      <Position9>
+        <Filename Value="fbuscap.pas"/>
+        <Caret Line="74" Column="9" TopLine="62"/>
+      </Position9>
+      <Position10>
+        <Filename Value="fbuscap.pas"/>
+        <Caret Line="79" Column="40" TopLine="66"/>
+      </Position10>
+      <Position11>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="60" TopLine="48"/>
+      </Position11>
+      <Position12>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="61" TopLine="49"/>
+      </Position12>
+      <Position13>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="60" TopLine="48"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frelatorios.pas"/>
+      </Position14>
+      <Position15>
+        <Filename Value="dprincipal.pas"/>
+        <Caret Line="8" Column="77" TopLine="2"/>
+      </Position15>
+      <Position16>
+        <Filename Value="frelatorios.pas"/>
+      </Position16>
+      <Position17>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="54" TopLine="34"/>
+      </Position17>
+      <Position18>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="51" Column="3" TopLine="34"/>
+      </Position18>
+      <Position19>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="64" Column="18" TopLine="49"/>
+      </Position19>
+      <Position20>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="39" Column="20" TopLine="27"/>
+      </Position20>
+      <Position21>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="41" Column="43" TopLine="30"/>
+      </Position21>
+      <Position22>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="37" Column="27" TopLine="27"/>
+      </Position22>
+      <Position23>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="38" Column="65" TopLine="32"/>
+      </Position23>
+      <Position24>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="37" Column="11" TopLine="24"/>
+      </Position24>
+      <Position25>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="59" Column="3" TopLine="49"/>
+      </Position25>
+      <Position26>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="49" Column="75" TopLine="39"/>
+      </Position26>
+      <Position27>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="58" Column="23" TopLine="39"/>
+      </Position27>
+      <Position28>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="59" Column="23" TopLine="40"/>
+      </Position28>
+      <Position29>
+        <Filename Value="fprincipal.pas"/>
+        <Caret Line="60" Column="3" TopLine="50"/>
+      </Position29>
+      <Position30>
+        <Filename Value="frelatorios.pas"/>
+        <Caret Line="64" Column="27" TopLine="32"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

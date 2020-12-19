@@ -1,0 +1,162 @@
+object FormPag: TFormPag
+  Left = 379
+  Height = 247
+  Top = 250
+  Width = 468
+  Caption = 'Registro de Pagamentos'
+  ClientHeight = 247
+  ClientWidth = 468
+  object DBEditMat: TDBEdit
+    Left = 166
+    Height = 23
+    Top = 48
+    Width = 45
+    DataField = 'id_pagamento'
+    DataSource = DataModule1.SourcePag
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object DBEditN: TDBEdit
+    Left = 166
+    Height = 23
+    Top = 80
+    Width = 45
+    DataField = 'id_cliente'
+    DataSource = DataModule1.SourcePag
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 25
+    Top = 222
+    Width = 468
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 468
+    DataSource = DataModule1.SourcePag
+    Options = []
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 64
+    Height = 15
+    Top = 56
+    Width = 75
+    Caption = 'ID Pagamento'
+    FocusControl = DBEditMat
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 15
+    Top = 88
+    Width = 51
+    Caption = 'ID Cliente'
+    FocusControl = DBEditN
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 15
+    Top = 120
+    Width = 55
+    Caption = 'ID Aluguel'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 15
+    Top = 152
+    Width = 26
+    Caption = 'Valor'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 64
+    Height = 15
+    Top = 184
+    Width = 24
+    Caption = 'Data'
+    ParentColor = False
+  end
+  object DBEditMed2: TDBEdit
+    Left = 166
+    Height = 23
+    Top = 144
+    Width = 82
+    DataField = 'valor'
+    DataSource = DataModule1.SourcePag
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object DBEditMed3: TDBEdit
+    Left = 166
+    Height = 23
+    Top = 112
+    Width = 45
+    DataField = 'id_aluguel'
+    DataSource = DataModule1.SourcePag
+    Alignment = taRightJustify
+    CharCase = ecNormal
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object DBDateTimePicker1: TDBDateTimePicker
+    Left = 166
+    Height = 23
+    Top = 176
+    Width = 83
+    DataField = 'data'
+    DataSource = DataModule1.SourcePag
+    ReadOnly = False
+    CenturyFrom = 1941
+    MaxDate = 2958465
+    MinDate = -53780
+    TabOrder = 5
+    TrailingSeparator = False
+    TextForNullDate = 'NULL'
+    LeadingZeros = True
+    Kind = dtkDate
+    TimeFormat = tf24
+    TimeDisplay = tdHMS
+    DateMode = dmComboBox
+    UseDefaultSeparators = True
+    HideDateTimeParts = []
+    MonthNames = 'Long'
+  end
+  object BitBtnFechar: TBitBtn
+    Left = 16
+    Height = 26
+    Top = 8
+    Width = 81
+    Caption = '&Sair'
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 6
+  end
+  object BitBtnBuscar: TBitBtn
+    Left = 104
+    Height = 26
+    Top = 8
+    Width = 81
+    AutoSize = True
+    Caption = '&Buscar'
+    Kind = bkHelp
+    OnClick = BitBtnBuscarClick
+    TabOrder = 7
+  end
+end

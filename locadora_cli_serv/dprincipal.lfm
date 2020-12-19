@@ -1,0 +1,369 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 354
+  HorizontalOffset = 379
+  VerticalOffset = 250
+  Width = 587
+  object ZQuery1: TZQuery
+    Connection = DataConexao.ZConnectionP
+    UpdateObject = ZUpdateSQL1
+    Active = True
+    SQL.Strings = (
+      'select * from veiculo'
+    )
+    Params = <>
+    Left = 35
+    Top = 72
+  end
+  object ZUpdateSQL1: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM veiculo'
+      'WHERE'
+      '  ((veiculo.id_veiculo IS NULL AND :OLD_id_veiculo IS NULL) OR (veiculo.id_veiculo = :OLD_id_veiculo))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO veiculo'
+      '  (id_veiculo, den_veiculo, ano, marca, preco, cor)'
+      'VALUES'
+      '  (:id_veiculo, :den_veiculo, :ano, :marca, :preco, :cor)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE veiculo SET'
+      '  id_veiculo = :id_veiculo,'
+      '  den_veiculo = :den_veiculo,'
+      '  ano = :ano,'
+      '  marca = :marca,'
+      '  preco = :preco,'
+      '  cor = :cor'
+      'WHERE'
+      '  ((veiculo.id_veiculo IS NULL AND :OLD_id_veiculo IS NULL) OR (veiculo.id_veiculo = :OLD_id_veiculo))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 128
+    Top = 72
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id_veiculo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'den_veiculo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'ano'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'marca'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'preco'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'cor'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id_veiculo'
+        ParamType = ptUnknown
+      end>
+  end
+  object SourceV: TDataSource
+    AutoEdit = False
+    DataSet = ZQuery1
+    Left = 224
+    Top = 72
+  end
+  object ZQuery2: TZQuery
+    Connection = DataConexao.ZConnectionP
+    UpdateObject = ZUpdateSQL2
+    Active = True
+    SQL.Strings = (
+      'select * from cliente'
+    )
+    Params = <>
+    Left = 35
+    Top = 144
+    object ZQuery2id_cliente: TLongintField
+      FieldKind = fkData
+      FieldName = 'id_cliente'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQuery2nome_cliente: TStringField
+      FieldKind = fkData
+      FieldName = 'nome_cliente'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object ZQuery2endereco: TStringField
+      FieldKind = fkData
+      FieldName = 'endereco'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object ZQuery2contato: TStringField
+      FieldKind = fkData
+      FieldName = 'contato'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 11
+    end
+  end
+  object ZUpdateSQL2: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM cliente'
+      'WHERE'
+      '  cliente.id_cliente = :OLD_id_cliente'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO cliente'
+      '  (id_cliente, endereco, contato, nome_cliente)'
+      'VALUES'
+      '  (:id_cliente, :endereco, :contato, :nome_cliente)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE cliente SET'
+      '  id_cliente = :id_cliente,'
+      '  endereco = :endereco,'
+      '  contato = :contato,'
+      '  nome_cliente = :nome_cliente'
+      'WHERE'
+      '  cliente.id_cliente = :OLD_id_cliente'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 128
+    Top = 144
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id_cliente'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'endereco'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'contato'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nome_cliente'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id_cliente'
+        ParamType = ptUnknown
+      end>
+  end
+  object SourceCli: TDataSource
+    AutoEdit = False
+    DataSet = ZQuery2
+    Left = 224
+    Top = 144
+  end
+  object ZQuery3: TZQuery
+    Connection = DataConexao.ZConnectionP
+    UpdateObject = ZUpdateSQL3
+    Active = True
+    SQL.Strings = (
+      'select * from aluguel'
+    )
+    Params = <>
+    Left = 35
+    Top = 224
+  end
+  object ZUpdateSQL3: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM aluguel'
+      'WHERE'
+      '  ((aluguel.id_aluguel IS NULL AND :OLD_id_aluguel IS NULL) OR (aluguel.id_aluguel = :OLD_id_aluguel))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO aluguel'
+      '  (id_aluguel, estado, id_cliente, id_veiculo, data_inicio, data_fim)'
+      'VALUES'
+      '  (:id_aluguel, :estado, :id_cliente, :id_veiculo, :data_inicio, :data_fim)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE aluguel SET'
+      '  id_aluguel = :id_aluguel,'
+      '  estado = :estado,'
+      '  id_cliente = :id_cliente,'
+      '  id_veiculo = :id_veiculo,'
+      '  data_inicio = :data_inicio,'
+      '  data_fim = :data_fim'
+      'WHERE'
+      '  ((aluguel.id_aluguel IS NULL AND :OLD_id_aluguel IS NULL) OR (aluguel.id_aluguel = :OLD_id_aluguel))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 128
+    Top = 224
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id_aluguel'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'estado'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'id_cliente'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'id_veiculo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'data_inicio'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'data_fim'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id_aluguel'
+        ParamType = ptUnknown
+      end>
+  end
+  object SourceAl: TDataSource
+    AutoEdit = False
+    DataSet = ZQuery3
+    Left = 224
+    Top = 224
+  end
+  object ZQuery4: TZQuery
+    Connection = DataConexao.ZConnectionP
+    UpdateObject = ZUpdateSQL4
+    Active = True
+    SQL.Strings = (
+      'select * from pagamento'
+    )
+    Params = <>
+    Left = 32
+    Top = 296
+  end
+  object ZUpdateSQL4: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM pagamento'
+      'WHERE'
+      '  ((pagamento.id_pagamento IS NULL AND :OLD_id_pagamento IS NULL) OR (pagamento.id_pagamento = :OLD_id_pagamento))'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO pagamento'
+      '  (id_pagamento, id_cliente, id_aluguel, valor, data)'
+      'VALUES'
+      '  (:id_pagamento, :id_cliente, :id_aluguel, :valor, :data)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE pagamento SET'
+      '  id_pagamento = :id_pagamento,'
+      '  id_cliente = :id_cliente,'
+      '  id_aluguel = :id_aluguel,'
+      '  valor = :valor,'
+      '  data = :data'
+      'WHERE'
+      '  ((pagamento.id_pagamento IS NULL AND :OLD_id_pagamento IS NULL) OR (pagamento.id_pagamento = :OLD_id_pagamento))'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    Left = 128
+    Top = 296
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id_pagamento'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'id_cliente'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'id_aluguel'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'valor'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'data'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id_pagamento'
+        ParamType = ptUnknown
+      end>
+  end
+  object SourcePag: TDataSource
+    AutoEdit = False
+    DataSet = ZQuery4
+    Left = 224
+    Top = 296
+  end
+  object ZReadOnlyQueryConsulta: TZReadOnlyQuery
+    Connection = DataConexao.ZConnectionP
+    Active = True
+    SQL.Strings = (
+      'SELECT c.id_cliente AS ID_C, c.nome_cliente AS Cliente, v.id_veiculo AS ID_V, p.id_pagamento AS ID_P, v.marca AS Marca, p.valor AS Pagamento, p.data AS Data'
+      'FROM cliente AS c, veiculo AS v, aluguel AS a, pagamento AS p'
+      'WHERE c.id_cliente = a.id_cliente'
+      'AND a.id_veiculo = v.id_veiculo'
+      'AND a.id_aluguel = p.id_aluguel'
+      'GROUP BY c.id_cliente, v.id_veiculo, p.id_pagamento'
+      'ORDER BY c.id_cliente'
+    )
+    Params = <>
+    Left = 336
+    Top = 72
+  end
+  object SourceConsulta: TDataSource
+    DataSet = ZReadOnlyQueryConsulta
+    Left = 336
+    Top = 144
+  end
+end
